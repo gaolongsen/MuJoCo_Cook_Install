@@ -4,7 +4,7 @@
 
 
 
-(**Note**: Don't install other versions with other python versions!)
+(**Note**: Don't try other Python versions for this tutorial because I don't promise that it will also be successful.)
 
 - [x] You can also click on my **[blog](https://longsengao.com/blog/2024/MuJoCo/)** for a better look.
 
