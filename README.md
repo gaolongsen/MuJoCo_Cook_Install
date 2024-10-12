@@ -2,11 +2,9 @@
 
 <img src="https://github.com/JackTony123/picx-images-hosting/raw/master/mujoco.67xg5uq8bg.webp" style="zoom: 10%;" /> 
 
-
+- [x] :point_right: **You can also click on my [blog](https://longsengao.com/blog/2024/MuJoCo/) for a better look.** :point_left:
 
 (**Note**: Don't try other Python versions for this tutorial because I don't promise that it will also be successful.)
-
-- [x] :point_right: **You can also click on my [blog](https://longsengao.com/blog/2024/MuJoCo/) for a better look.** :point_left:
 
 This document can help me (maybe you also) to setup [MuJoCo](https://mujoco.org/) and [mujoco-py](https://github.com/openai/mujoco-py) environment when you reinstall your Ubuntu 20.04 every time:sweat_smile: and can help you save lots of time (at least for me). Note that for *mujoco-py*, the official Github source from OpenAI only introduced some setup for related dependent packages or environments that may let you fail to use it. if you follow the instructions below, 99% you can install the environment on your clean Ubuntu 20.04 successfully:wink: :dancer: (1% may be something wrong with your system:confused:).
 
@@ -14,14 +12,14 @@ This document can help me (maybe you also) to setup [MuJoCo](https://mujoco.org/
 
 **Step 1: Install anaconda**
 
-[Anaconda3-2021.04-Linux-x86_64.sh](https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh)
+[Anaconda3-2024.06-1-Linux-x86_64.sh](https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh)
 
 ```shell
-sudo chmod +x Anaconda3-2021.04-Linux-x86_64.sh
+sudo chmod +x Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
 
 ```shell
-./Anaconda3-2021.04-Linux-x86_64.sh
+./Anaconda3-2024.06-1-Linux-x86_64.sh
 ```
 
 **Step 2 : install git**
@@ -61,24 +59,17 @@ git clone https://github.com/gaolongsen/Mujoco210.git
    ```shell
    gedit ~/.bashrc
    ```
+   
+   Then add the following four lines on the bottom of you `.bashrc` file:
 
 ```shell
-export LD_LIBRARY_PATH=/home/user_name/.mujoco/mujoco210/bin
-```
-
-```shell
+export LD_LIBRARY_PATH=/home/wam/.mujoco/mujoco210/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
-```
-
-```shell
 export PATH="$LD_LIBRARY_PATH:$PATH"
-```
-
-```shell
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so
 ```
 
-
+(:point_up_2:Note that don't forget to replace the `wam` with your local PC name.) 
 
 5. ```shell
    source ~/.bashrc
