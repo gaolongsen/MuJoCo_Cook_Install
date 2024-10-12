@@ -1,12 +1,12 @@
-# **Mujoco and mujoco-py installation instruction(Python 3.X Version)**
+# **MuJoCo and mujoco-py installation instruction(Python 3.X Version)**
 
 <img src="https://github.com/JackTony123/picx-images-hosting/raw/master/mujoco.67xg5uq8bg.webp" style="zoom: 10%;" /> <img src="https://github.com/JackTony123/picx-images-hosting/raw/master/recover.6ik9z07zsy.webp" style="zoom: 48%;" />
 
 
 
-(Note: Don't install other versions with other python versions!)
+(**Note**: Don't install other versions with other python versions!)
 
-This document can help me(maybe you also) to setup MuJoco environment when you reinstall your ubuntu system everytime and can help you save lots of time LOL (at least for me).
+This document can help me (maybe you also) to setup [MuJoCo](https://mujoco.org/) and [mujoco-py](https://github.com/openai/mujoco-py) environment when you reinstall your Ubuntu 20.04 every time:sweat_smile: and can help you save lots of time (at least for me). Note that for *mujoco-py*, the official Github source from OpenAI only introduced some setup for related dependent packages or environments that may let you fail to use it. if you follow the instructions below, 99% you can install the environment on your clean Ubuntu 20.04 successfully:wink: :dancer: (1% may be something wrong with your system:confused:).
 
 *-Last update: 2024.10.10*
 
@@ -28,9 +28,9 @@ sudo chmod +x Anaconda3-2021.04-Linux-x86_64.sh
 sudo apt install git
 ```
 
-**Step 3 : install the mujoco library**
+**Step 3 : install the MuJoCo library**
 
-1. Download the Mujoco library from 
+1. Download the MuJoCo library from 
 
 ​	https://mujoco.org/download/mujoco210-linux-x86_64.tar.gz
 
@@ -91,6 +91,12 @@ cd ~/.mujoco/mujoco210/bin
 ```shell
 ./simulate ../model/humanoid.xml
 ```
+
+If you are successful, you will see like this:
+
+<img src="https://github.com/JackTony123/picx-images-hosting/raw/master/human_mujoco.361k4ol5jx.png" style="zoom:20%;" />
+
+
 
 **Step 4 Install mujoco-py:**
 
@@ -174,6 +180,8 @@ pip3 install -U 'mujoco-py<2.2,>=2.1'
 pip install "cython<3"
 ```
 
+(**PS:** above command you don't have to do if you run the following example test without any error happened. But based on our test, you probably need to downgrade the *cython* to avoid any potential problem.)
+
 ```shell
 cd examples
 ```
@@ -181,6 +189,10 @@ cd examples
 ```shell
 python3 setting_state.py
 ```
+
+If you successfully setup your environment, you will see the demo run like this:
+
+<img src="https://github.com/JackTony123/picx-images-hosting/raw/master/mujoco_test_demo.5c0yqghv5g.png" style="zoom:15%;" />
 
 **If you’re getting a Cython error, try:**
 
