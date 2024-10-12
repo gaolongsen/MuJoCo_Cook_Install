@@ -1,4 +1,4 @@
-# **Mujoco and mujoco-py installation instruction(Python 3.X Version)**
+# **MuJoCo and mujoco-py installation instruction(Python 3.X Version)**
 
 <img src="https://github.com/JackTony123/picx-images-hosting/raw/master/mujoco.67xg5uq8bg.webp" style="zoom: 10%;" /> <img src="https://github.com/JackTony123/picx-images-hosting/raw/master/recover.6ik9z07zsy.webp" style="zoom: 48%;" />
 
@@ -6,7 +6,7 @@
 
 (Note: Don't install other versions with other python versions!)
 
-This document can help me(maybe you also) to setup MuJoco environment when you reinstall your ubuntu system everytime and can help you save lots of time LOL (at least for me).
+This document can help me(maybe you also) to setup MuJoCo environment when you reinstall your ubuntu system everytime and can help you save lots of time LOL (at least for me).
 
 *-Last update: 2024.10.10*
 
