@@ -2,11 +2,11 @@
 
 <img src="https://github.com/JackTony123/picx-images-hosting/raw/master/mujoco.67xg5uq8bg.webp" style="zoom: 10%;" /> 
 
-- [x] :point_right: **You can also click on my [blog](https://longsengao.com/blog/2024/MuJoCo/) for a better look.** :point_left:
+- [x]  **You can also click on my [blog](https://longsengao.com/blog/2024/MuJoCo/) for a better look.** 
 
 (**Note**: Don't try other Python versions for this tutorial because I don't promise that it will also be successful.)
 
-This document can help me (maybe you also) to setup [MuJoCo](https://mujoco.org/) and [mujoco-py](https://github.com/openai/mujoco-py) environment when you reinstall your Ubuntu 20.04 every time:sweat_smile: and can help you save lots of time (at least for me). Note that for *mujoco-py*, the official Github source from OpenAI only introduced some setup for related dependent packages or environments that may let you fail to use it. if you follow the instructions below, 99% you can install the environment on your clean Ubuntu 20.04 successfully:wink: :dancer: (1% may be something wrong with your system:confused:).
+This document can help me (maybe you also) to setup [MuJoCo](https://mujoco.org/) and [mujoco-py](https://github.com/openai/mujoco-py) environment when you reinstall your Ubuntu 20.04 every time:sweat_smile: and can help you save lots of time (at least for me). Note that for *mujoco-py*, the official Github source from OpenAI only introduced some setup for related dependent packages or environments that may let you fail to use it. if you follow the instructions below, 99% you can install the environment on your clean Ubuntu 20.04 successfully (1% may be something wrong with your system).
 
 *-Last update: 2024.10.10*
 
@@ -118,7 +118,7 @@ sudo apt-get install libxslt1-dev zlib1g-dev libglew1.5 libglew-dev python3-pip
 ```
 
 ```shell
-git clone https://github.com/openai/mujoco-py
+git clone https//github.com/openai/mujoco-py
 ```
 
 ```shell
@@ -173,7 +173,7 @@ pip3 install -U 'mujoco-py<2.2,>=2.1'
 pip install "cython<3"
 ```
 
-(**PS:** above command you don't have to do if you run the following example test without any error happened. But based on our test, you probably need to downgrade the *cython* to avoid any potential problem.)
+(**PS** above command you don't have to do if you run the following example test without any error happened. But based on our test, you probably need to downgrade the *cython* to avoid any potential problem.)
 
 ```shell
 cd examples
@@ -183,11 +183,11 @@ cd examples
 python3 setting_state.py
 ```
 
-If you successfully setup your environment, you will see the demo run like this:
+If you successfully setup your environment, you will see the demo run like this
 
-<img src="https://github.com/JackTony123/picx-images-hosting/raw/master/mujoco_test_demo.5c0yqghv5g.png" style="zoom:15%;" />
+<img src="https//github.com/JackTony123/picx-images-hosting/raw/master/mujoco_test_demo.5c0yqghv5g.png" style="zoom15%;" />
 
-**If you’re getting a Cython error, try:**
+**If you’re getting a Cython error, try**
 
 ```shell
 pip install "cython<3"
