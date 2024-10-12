@@ -6,6 +6,8 @@
 
 (**Note**: Don't install other versions with other python versions!)
 
+- [x] You can also click on my **[blog](https://longsengao.com/blog/2024/MuJoCo/)** for a better look.
+
 This document can help me (maybe you also) to setup [MuJoCo](https://mujoco.org/) and [mujoco-py](https://github.com/openai/mujoco-py) environment when you reinstall your Ubuntu 20.04 every time:sweat_smile: and can help you save lots of time (at least for me). Note that for *mujoco-py*, the official Github source from OpenAI only introduced some setup for related dependent packages or environments that may let you fail to use it. if you follow the instructions below, 99% you can install the environment on your clean Ubuntu 20.04 successfully:wink: :dancer: (1% may be something wrong with your system:confused:).
 
 *-Last update: 2024.10.10*
