@@ -185,7 +185,7 @@ python3 setting_state.py
 
 If you successfully setup your environment, you will see the demo run like this
 
-<img src="https//github.com/JackTony123/picx-images-hosting/raw/master/mujoco_test_demo.5c0yqghv5g.png" style="zoom15%;" />
+![](https://github.com/JackTony123/picx-images-hosting/raw/master/mujoco_test_demo.5c0yqghv5g.png)
 
 **If you’re getting a Cython error, try**
 
